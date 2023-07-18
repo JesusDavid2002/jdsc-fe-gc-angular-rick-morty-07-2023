@@ -16,6 +16,7 @@ export class CharacterDetailsComponent {
 
   // Recogemos la id como parametro y accedemos al database.json utilizando la id
   ngOnInit() {
+    // Con el this.route.params accedemos al componente padre y de alli recogeriamos la id para pasarla al siguiente método
     this.route.params.subscribe(params => {
       this.characterId = params['id'];
 
